@@ -15,7 +15,7 @@ export default {
     imageUrl() {
       // Access environment variables in the script block
       const host = import.meta.env.VITE_DOTCMS_HOST
-      return `${host}${this.image}?language_id=${this.languageId}`
+      return `${host}/dA/${this.image}?language_id=${this.languageId}`
     }
   }
 }
