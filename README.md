@@ -1,6 +1,16 @@
 # dotCMS Vue JS Example
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a demo application that uses Vue.js to render the dotCMS demo instance.
+
+If is based on the [official Vue.js example application in dotCMS/core](https://github.com/dotCMS/core/tree/main/examples/vuejs).
+
+## Features and fixes of this fork
+- The initial commit of this repo represents the state of the example application in the core repo. Subsequent commits represent my work.
+- Upon initial load of the root page, the app did not refresh to show the front-page components. This is now fixed.
+- `Activity` and `Banner` components referred to an incorrect image URL. This is now fixed.
+- Fixed some warnings thrown by recent version of Vue.
+- Added `VtlInclude` as a generic component that delegates rendering to an internal component specified in the prop `widgetCodeJSON.useComponent`.
+- Implemented `BlogListing` to show the blog listing and `BlogPost` to show a blog entry.
 
 ## What do you need?
 1. A dotCMS instance or you can use https://demo.dotcms.com
@@ -13,7 +23,7 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Get the Vue Example code
 
 You can get the vue example by checking out the project repo
-```bash 
+```bash
 git clone -n --depth=1 --filter=tree:0 https://github.com/dotCMS/core
 cd core
 git sparse-checkout set --no-cone examples/vuejs
