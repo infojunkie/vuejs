@@ -23,7 +23,7 @@ async function fetchData(routePath) {
 
 onMounted(async () => {
   nav.value = await client.nav.get({ path: '/', depth: '2' }).then(({ entity }) => entity.children)
-  data.value = await fetchData('/')
+  data.value = await fetchData(route.path)
 })
 
 watch(

@@ -1,7 +1,6 @@
 <script setup>
 import { computed } from 'vue'
 import Container from './Container.vue'
-import { defineProps } from 'vue'
 
 const props = defineProps({
   column: Object

@@ -4,6 +4,8 @@ import Activity from './Activity.vue'
 import Image from './Image.vue'
 import Product from './Product.vue'
 import WebPageContent from './WebPageContent.vue'
+import VtlInclude from './VtlInclude.vue'
+import BlogListing from './BlogListing.vue'
 // Import other components
 
 const components = {
@@ -11,6 +13,8 @@ const components = {
   Activity,
   Image,
   Product,
+  VtlInclude,
+  BlogListing,
   webPageContent: WebPageContent
 }
 
