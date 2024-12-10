@@ -11,9 +11,11 @@ const data = ref(null)
 const nav = ref(null)
 
 async function fetchData(routePath) {
+  const realPath = (!nav.value || nav.value.findIndex(n => n.href == routePath) > -1) ? routePath : '/'
+
   const data = await client.page
     .get({
-      path: routePath || 'index',
+      path: realPath || 'index',
       language_id: 1
     })
     .then(({ entity }) => entity)

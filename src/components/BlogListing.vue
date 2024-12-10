@@ -7,8 +7,9 @@ export default {
   },
   name: 'BlogListing',
   props: {
+    useComponent: String,
     posts: Object
-  },
+  }
 }
 </script>
 
