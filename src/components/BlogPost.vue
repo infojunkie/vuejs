@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6 py-4 bg-slate-100">
+  <div class="px-6 py-4">
     <div class="mb-2 text-xl font-bold">{{ title }}</div>
   </div>
   <div class="p-4">
@@ -35,7 +35,7 @@ export default {
     imageUrl() {
       // Access environment variables in the script block
       const host = import.meta.env.VITE_DOTCMS_HOST
-      return `${host}${this.image.thumbnailUri}?language_id=${this.languageId}`
+      return `${host}${this.image.rawUri}?language_id=${this.languageId}`
     }
   }
 }

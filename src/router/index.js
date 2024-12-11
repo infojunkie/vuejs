@@ -9,9 +9,7 @@ const router = createRouter({
       path: '/blog/post/:inode',
       name: 'BlogDetail',
       component: BlogDetail,
-      props: route => {
-        return { dataPath: '/Blog', ...route.params }
-      }
+      props: true
     },
     {
       path: '/:pathMatch(.*)*',

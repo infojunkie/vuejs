@@ -10,7 +10,14 @@ If is based on the [official Vue.js example application in dotCMS/core](https://
 - `Activity` and `Banner` components referred to an incorrect image URL. This is now fixed.
 - Fixed some warnings thrown by recent version of Vue.
 - Added `VtlInclude` as a generic component that delegates rendering to an internal component specified in the prop `widgetCodeJSON.useComponent`.
-- Implemented `BlogListing` to show the blog listing and `BlogPost` to show a blog entry.
+- Implemented `BlogListing` to show the blog listing and `BlogPost` to show a blog teaser.
+- Added route for `BlogDetail` which sources the full blog post from Content API and the promo banners from GraphQL API.
+
+Screenshot showing blog listing.
+![Screenshot showing blog listing.](https://github.com/infojunkie/vuejs/blob/main/screenshot-blog-listing.png?raw=true)
+
+Screenshot showing blog detail.
+![Screenshot showing blog detail.](https://github.com/infojunkie/vuejs/blob/main/screenshot-blog-detail.png?raw=true)
 
 ## What do you need?
 1. A dotCMS instance or you can use https://demo.dotcms.com

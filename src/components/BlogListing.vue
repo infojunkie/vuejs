@@ -14,5 +14,9 @@ export default {
 </script>
 
 <template>
-  <BlogPost v-bind="post" v-for="post in posts" :key="post.identifier"/>
+  <div class="row" data-dot="row" v-for="post in posts" >
+    <div class="col-start-4 col-end-9 mt-7" data-dot="column">
+      <BlogPost v-bind="post" :key="post.identifier"/>
+    </div>
+  </div>
 </template>
