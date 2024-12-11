@@ -31,12 +31,11 @@ Screenshot showing blog detail.
 
 You can get the vue example by checking out the project repo
 ```bash
-git clone -n --depth=1 --filter=tree:0 https://github.com/dotCMS/core
-cd core
-git sparse-checkout set --no-cone examples/vuejs
-git checkout
+git clone https://github.com/infojunkie/vuejs
+cd vuejs
+cp .env.example .env
 ```
-The files will be found under the `examples/angular` folder
+Then edit `.env` to set `VITE_DOTCMS_TOKEN` to the token obtained above.
 
 ## Customize configuration
 
